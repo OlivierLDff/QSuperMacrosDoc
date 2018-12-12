@@ -29,7 +29,7 @@
         <nav class="navbar navbar-default" role="navigation">
             <div class="container">
                 <div class="navbar-header">
-                    <a class="navbar-brand">QSuperMacros 1.0.1</a>
+                    <a class="navbar-brand">QSuperMacros 1.1.0</a>
                 </div>
             </div>
         </nav>
@@ -87,10 +87,16 @@ $(function() {
 <ul>
 <li>The documentation can be found <a href="https://olivierldff.github.io/QSuperMacrosDoc/">here</a></li>
 </ul>
+<h2>Release</h2>
+<ul>
+<li><code>1.0.0</code> : Initial work</li>
+<li><code>1.1.0</code> : Reset functions</li>
+</ul>
 <h2>Convention</h2>
 <ul>
 <li>Class attribute are <code>_&lt;property&gt;</code>.</li>
 <li>Getter and Setter are <code>Get&lt;Property&gt;</code>, <code>Set&lt;Property&gt;</code>.</li>
+<li>Reset are <code>Reset&lt;Property&gt;</code>.</li>
 <li>Signals are <code>&lt;property&gt;Changed</code>.</li>
 </ul>
 <h2>For one-line creation of QML properties</h2>
@@ -137,6 +143,7 @@ $(function() {
 <li><b>QSUPER_MACROS_USE_QT_PREFIX</b> : Use Qt-ish internal attribute prefix <code>m_attribute</code>[ON OFF]. <em>Default = OFF.</em></li>
 <li><b>QSUPER_MACROS_USE_QT_GETTERS</b> : Use Qt-ish Getter naming convention <code>attribute()</code> [ON OFF]. <em>Default = OFF.</em></li>
 <li><b>QSUPER_MACROS_USE_QT_SETTERS</b> : Use Qt-ish Setter naming convention <code>setAttribute</code> [ON OFF]. <em>Default = OFF.</em></li>
+<li><b>QSUPER_MACROS_USE_QT_RESET</b> : Use Qt-ish Setter naming convention resetAttribute [ON OFF]. <em>Default = OFF.</em></li>
 <li><b>QSUPER_MACROS_USE_QT_SIGNALS</b> : Use Qt-ish signal naming convention <code>attributeChanged</code>. It is really recommended to leave this option ON because QML Connections don't handle signals starting with Capital Letter [ON OFF]. <em>Default = ON.</em></li>
 </ul>
 <h3>Dependencies</h3>
@@ -170,7 +177,7 @@ $(function() {
 </div>
 </div>
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 12 2018 18:17:31 for QSuperMacros by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 12 2018 18:28:05 for QSuperMacros by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>
